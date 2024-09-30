@@ -1,21 +1,14 @@
 import React from 'react';
-import {SafeAreaView, View, Text} from 'react-native';
-import TextComponent from './components/Text/TextComponent';
+import {SafeAreaView, View} from 'react-native';
+import Item from './components/Item/Item';
+
 
 const App = () => {
   return (
     <SafeAreaView>
-      <View style={{ backgroundColor: "blue", height: 100}}> 
-        <Text>Header</Text>
-      </View>
-      <View style={{ backgroundColor: "grey"}}>
-      <TextComponent />
-      <TextComponent />
-      <TextComponent />
-      </View>
-      <View>
-        <Text>Footer</Text>
-      </View>
+      <Item name={"Table"} price={20} />
+      <Item name={"Chair"} price={10} />
+      <Item name={"Desk"} price={200} />
     </SafeAreaView>
   );
 };
