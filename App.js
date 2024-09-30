@@ -1,14 +1,12 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
-import Item from './components/Item/Item';
+import {SafeAreaView} from 'react-native';
+import TextComponent from './components/Text/TextComponent';
 
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Item name={"Table"} price={20} />
-      <Item name={"Chair"} price={10} />
-      <Item name={"Desk"} price={200} />
+      <TextComponent />
     </SafeAreaView>
   );
 };
