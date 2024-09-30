@@ -1,10 +1,11 @@
 import React from 'react';
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import TextComponent from './components/Text/TextComponent';
 
 const App = () => {
   return (
     <SafeAreaView>
-      <Text>Hello World!</Text>
+      <TextComponent />
     </SafeAreaView>
   );
 };
